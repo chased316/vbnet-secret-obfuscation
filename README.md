@@ -6,7 +6,7 @@ Tiny **.NET Framework 4.8** console app: reads two secrets by name using the **A
 
 1. **.NET SDK** (to build/run with `dotnet`) *or* Visual Studio with **.NET Framework 4.8 targeting pack**.
 2. **AWS access** to Secrets Manager in some account/region.
-3. **Secrets** named `secret1` and `secret2` in that account (or change the names in `Program.vb`).
+3. **Secrets** named `secret1` and `secret2` in that account.
 
 ## Configure AWS on your machine
 
@@ -42,12 +42,3 @@ dotnet run
 ```
 
 Or build then run the `.exe` under `bin/Debug/net48/` (or `Release` after `dotnet build -c Release`).
-
-## Change secret names
-
-Edit the two strings in `Program.vb` inside `Main()`:
-
-```vb
-Print(client, "secret1")
-Print(client, "secret2")
-```
