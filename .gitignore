@@ -1,3 +1,7 @@
+# Local demo credentials (copy App.config.example → real.config)
+real.config
+App.config
+
 bin/
 obj/
 .vs/
